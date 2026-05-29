@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results - Inspire Coaching Classes</title>
     
+    <!-- Importing Modern Font for Marathi (Devanagari) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -90,12 +91,12 @@
 
         /* --- NEW SECTION TITLE STYLE --- */
         .section-title {
-            font-family: 'Mukta', sans-serif; /* Modern Devanagari Font applied here */
+            font-family: 'Mukta', sans-serif;
             text-align: center;
             color: var(--primary);
-            font-size: 1.4rem; /* Scaled down slightly for better readability of paragraph-length text */
-            font-weight: 700;
-            line-height: 1.6; /* Improved line height for breathing room */
+            font-size: 1.4rem; 
+            font-weight: 600; /* Dropped slightly so the bold highlights stand out more */
+            line-height: 1.7; 
             margin-top: 10px;
             margin-bottom: 40px;
             position: relative;
@@ -109,20 +110,28 @@
             width: 80px;
             height: 4px;
             background: var(--accent);
-            margin: 15px auto 0;
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        /* --- MODERN TEXT HIGHLIGHT EFFECT --- */
+        .highlight {
+            font-weight: 800;
+            color: #1a1438; /* Slightly darker than primary for contrast */
+            /* This creates a marker-like highlight on the bottom half of the text */
+            background: linear-gradient(transparent 55%, rgba(255, 215, 0, 0.5) 45%);
+            padding: 0 2px;
             border-radius: 2px;
         }
 
         /* --- Glass Poster Cards --- */
         .poster-card {
-            /* Glassmorphism Card Style */
             background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.8);
-            
             border-radius: 20px;
-            padding: 10px; /* Creates the border frame effect */
+            padding: 10px; 
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
             margin-bottom: 30px;
             transition: transform 0.3s ease;
@@ -137,7 +146,7 @@
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 12px; /* Inner radius for image */
+            border-radius: 12px;
         }
 
         /* --- Separator (Subtle) --- */
@@ -163,10 +172,10 @@
             left: 20px;
             right: 20px;
             display: flex;
-            justify-content: space-between; /* Pushes items to left and right */
+            justify-content: space-between; 
             align-items: center;
             z-index: 1000;
-            pointer-events: none; /* Allows clicking through empty space */
+            pointer-events: none; 
         }
 
         /* -- Left: Call Button (Icon Only) -- */
@@ -237,7 +246,7 @@
         
         <div class="contact-box">
             <div class="contact-info">
-                Contact : Pathan Sir (9011291176)
+                Contact : Pathan H.S. (9011291176)
             </div>
         </div>
         
@@ -250,7 +259,9 @@
 
     <div class="container">
 
-        <h2 class="section-title">जेव्हा एखादा विद्यार्थी आपल्या पालकांच्या डोळ्यांतील आशेचे किरण ओळखून अभ्यास करतो, तेव्हा निकालाचे आकडे असेच इतिहास घडवणारे येतात. आमच्या विद्यार्थ्यांनी आपल्या अथांग परिश्रमांच्या बळावर आज आपल्या घराण्याचे नाव सुवर्णअक्षरांनी कोरले आहे आणि आम्हा सर्व गुरुजनांचा कणा ताठ केला आहे. खाली आमच्या अशाच अद्वितीय विद्यार्थ्यांचे निकाल सादर करत आहोत, ज्यांनी आपल्या जिद्दीने आणि कष्टाने खूप विद्यार्थ्यांना अशक्य वाटणाऱ्या गोष्टी शक्य करून दाखवल्या आहेत.</h2>
+        <h2 class="section-title">
+            जेव्हा एखादा विद्यार्थी आपल्या <span class="highlight">पालकांच्या डोळ्यांतील आशेचे किरण</span> ओळखून अभ्यास करतो, तेव्हा निकालाचे आकडे असेच <span class="highlight">इतिहास घडवणारे</span> येतात. आमच्या विद्यार्थ्यांनी आपल्या अथांग परिश्रमांच्या बळावर आज आपल्या घराण्याचे नाव <span class="highlight">सुवर्णअक्षरांनी कोरले</span> आहे आणि आम्हा सर्व गुरुजनांचा कणा ताठ केला आहे. खाली आमच्या अशाच अद्वितीय विद्यार्थ्यांचे निकाल सादर करत आहोत, ज्यांनी आपल्या जिद्दीने आणि कष्टाने खूप विद्यार्थ्यांना <span class="highlight">अशक्य वाटणाऱ्या गोष्टी शक्य</span> करून दाखवल्या आहेत.
+        </h2>
 
         <div class="poster-card">
             <img src="images/Image%2014.jpg" alt="Result 14">
